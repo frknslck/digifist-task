@@ -150,6 +150,7 @@
 .detail-layer{
     display: flex;
     justify-content: space-between;
+    margin-top: 5px;
 }
 
 #item-colors{
@@ -385,20 +386,19 @@
         gap: 3px;
         width: 146px;
         height: 23px;
-        transform: scale(0.7);
-        margin-left: -22px;
     }
 
     .all-btn-underline{
         width: 140px;
         height: 1px;
-       background-color: white;
+        background-color: white;
     }
 
     .all-btn-text{
         width: 146px;
         height: 17px;
         font-size: 12.8px;
+        font-weight: 900;
         color: white;
     }
     
