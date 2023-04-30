@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Avant;
+    src: url("/assets/font/ITCAvantGardePro-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Avenir;
+    font-weight: bold;
+    src: url("/assets/font/Avenir.ttc") format("opentype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.left-img{
+    width: 720px;
+    height: 864px;
+}
+
+.right{
+    width: 720px;
+    height: 864px;
+}
+
+.text-container{
+    padding-top: 96px;
+    padding-left: 120px;
+    padding-bottom: 68px;
+}
+
+.head1{
+    width: 494px;
+    font-family: 'Avant';
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 130%;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    margin-bottom: 13px;
+}
+
+.head2{
+    width: 432px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #666666;
+    margin-bottom: 32px;
+}
+
+.all-btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+    width: 146px;
+    height: 23px;
+}
+
+.all-btn-text{
+    width: 146px;
+    height: 17px;
+    font-family: 'Avenir';
+    font-weight: 900;
+    font-size: 12.8px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.all-btn-underline{
+    width: 146px;
+    height: 1px;
+    background: #000000;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#items-container{
+    display: flex;
+    padding-left: 120px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    outline: none;
+    border: none;
+}
+
+.item-card{
+    width: 230px;
+    height: 363px;
+    margin-right: 32px;
+}
+
+.item-img{
+    width: 230px;
+    height: 310px;
+    padding-bottom: 12px;
+}
+
+.item-details{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.item-name{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 160%;
+}
+
+.item-price{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.8px;
+    line-height: 160%;
+}
+
+.detail-layer{
+    display: flex;
+    justify-content: space-between;
+}
+
+#item-colors{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.btn {
+    border-color: transparent;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btn1{
+    background-color: #A6CC99;
+}
+
+.btn2{
+    background-color: #CC9999;
+}
+
+.btn3{
+    background-color: #CB99CC;
+}
+
+.btn4{
+    background-color: #99c3cc;
+}
+
+.active {
+    border: black 0.25px solid;
+}
