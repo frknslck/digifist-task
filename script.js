@@ -4,17 +4,17 @@ const everydayItems = [
     {
         name: "365 Signature Hoodie",
         price: "€33.95",
-        image: "/assets/img/bg-1.png"
+        image: "assets/img/bg-1.png"
     },
     {
         name: "Organic Skinny High Waist Jeans",
         price: "€33.95",
-        image: "/assets/img/bg-2.png"
+        image: "assets/img/bg-2.png"
     },
     {
         name: "Organic Skinny High Waist Jeans",
         price: "€33.95",
-        image: "/assets/img/bg-3.png"
+        image: "assets/img/bg-3.png"
     }
 ]
 

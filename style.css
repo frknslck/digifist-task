@@ -1,12 +1,12 @@
 @font-face {
     font-family: Avant;
-    src: url("/assets/font/ITCAvantGardePro-Bold.otf") format("opentype");
+    src: url("assets/font/ITCAvantGardePro-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: Avenir;
     font-weight: bold;
-    src: url("/assets/font/Avenir.ttc") format("opentype");
+    src: url("assets/font/Avenir.ttc") format("opentype");
 }
 
 *{
@@ -20,6 +20,7 @@
     justify-content: center;
     align-items: center;
     /* width: fit-content; */
+    overflow-x: hidden;
 }
 
 .left-img{
@@ -404,7 +405,7 @@
     #items-container{
         width: 360px;
         height: 224px;
-        padding-left: 0;
+        padding-left: 14px;
     }    
 
     .item-card{
