@@ -20,7 +20,7 @@ const everydayItems = [
 
 itemsContainer.innerHTML = everydayItems.map((item) => {
     return `<div class="item-card">
-                  <img class="item-img" src=${item?.image} alt="item img" />
+                  <img class="item-img" src="${item?.image}" alt="item img" />
                   <div class="item-details">
                   <div>
                     <p class="item-name">${item?.name}</p>
