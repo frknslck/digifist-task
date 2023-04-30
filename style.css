@@ -18,6 +18,8 @@
 .main-container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* width: fit-content; */
 }
 
 .left-img{
@@ -48,6 +50,10 @@
     margin-bottom: 13px;
 }
 
+.head1::before{
+    content: "Everyday items, we have something to suit every occasion.";
+}
+
 .head2{
     width: 432px;
     font-family: 'Avenir';
@@ -73,8 +79,6 @@
 }
 
 .all-btn-text{
-    width: 146px;
-    height: 17px;
     font-family: 'Avenir';
     font-weight: 900;
     font-size: 12.8px;
@@ -89,7 +93,7 @@
 }
 
 .all-btn-underline{
-    width: 146px;
+    width: 140px;
     height: 1px;
     background: #000000;
     flex: none;
@@ -105,6 +109,7 @@
     overflow-x: hidden;
     outline: none;
     border: none;
+    /* flex-wrap: wrap; */
 }
 
 .item-card{
@@ -178,4 +183,272 @@
 
 .active {
     border: black 0.25px solid;
+}
+
+
+@media only screen and (max-width: 1440px) {   
+    .main-container{
+        margin: auto;
+    }
+    
+    .left-img{
+        width: 550px;
+        height: 650px;
+    }
+    
+    .right{
+        width: 620px;
+        height: 650px;
+    }
+
+    .text-container{
+        height: 300px;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-bottom: 0px;
+    }
+
+    .head1{
+        width: 400px;
+        font-size: 21.25px;
+    }
+    
+    .head2{
+        width: 400px;
+        font-size: 16px;
+    }
+
+    .all-btn-text{
+        width: 146px;
+        height: 17px;
+        font-size: 12.8px;
+        color: blue;
+    }
+    
+    #items-container{
+        width: 580px;
+        height: 300px;
+        padding-left: 40px;
+    }    
+
+    .item-card{
+        width: 220px;
+    }
+
+    .item-img{
+        width: 200px;
+        height: 250px;
+        padding-bottom: 12px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {    
+    .left-img{
+        width: 420px;
+        height: 500px;
+    }
+    
+    .right{
+        width: 550px;
+        height: 500px;
+    }
+
+    .text-container{
+        height: 180px;
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-bottom: 0px;
+    }
+
+    .head1{
+        width: 300px;
+        font-size: 16px;
+    }
+    
+    .head2{
+        width: 300px;
+        font-size: 10px;
+        margin-bottom: 16px;
+    }
+
+    .all-btn{
+        gap: 3px;
+        width: 146px;
+        height: 23px;
+        transform: scale(0.7);
+        margin-left: -22px;
+    }
+
+    .all-btn-underline{
+        width: 140px;
+        height: 1px;
+    }
+
+    .all-btn-text{
+        width: 146px;
+        height: 17px;
+        font-size: 12.8px;
+        color: rgb(255, 0, 0);
+    }
+    
+    #items-container{
+        width: 470px;
+        height: 224px;
+        padding-left: 40px;
+    }    
+
+    .item-card{
+        height: 200px;
+    }
+
+    .item-img{
+        width: 150px;
+        height: 180px;
+        padding-bottom: 12px;
+    }
+
+    .item-details{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .item-name{
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 160%;
+    }
+    
+    .item-price{
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 160%;
+    }
+
+    .btn {
+        border-color: transparent;
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .active {
+        border: black 0.25px solid;
+    }    
+}
+
+@media only screen and (max-width: 768px) {
+    .main-container{
+        flex-direction: column;
+    }
+
+    .left-img{
+        width: 360px;
+        height: 400px;
+    }
+    
+    .right{
+        position: absolute;
+        top: 200px;
+        width: 360px;
+        height: 350px;
+    }
+
+    .text-container{
+        height: 120px;
+        padding-top: 25px;
+        padding-left: 20px;
+        margin-bottom: 50px;
+    }
+
+    .head1{
+        width: 300px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .head1::before{
+        content: "Everyday tops, we have something to suit every occasion.";
+    }
+    
+    .head2{
+        display: none;
+    }
+
+    .all-btn{
+        gap: 3px;
+        width: 146px;
+        height: 23px;
+        transform: scale(0.7);
+        margin-left: -22px;
+    }
+
+    .all-btn-underline{
+        width: 140px;
+        height: 1px;
+       background-color: white;
+    }
+
+    .all-btn-text{
+        width: 146px;
+        height: 17px;
+        font-size: 12.8px;
+        color: white;
+    }
+    
+    #items-container{
+        width: 360px;
+        height: 224px;
+        padding-left: 0;
+    }    
+
+    .item-card{
+        height: 200px;
+        margin-right: 16px;
+    }
+
+    .item-img{
+        width: 150px;
+        height: 180px;
+        padding-bottom: 12px;
+    }
+
+    .item-details{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .item-name{
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 160%;
+    }
+    
+    .item-price{
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 160%;
+    }
+
+    .btn {
+        border-color: transparent;
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .active {
+        border: black 0.25px solid;
+    }
 }
