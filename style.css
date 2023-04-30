@@ -350,12 +350,12 @@
 
     .left-img{
         width: 360px;
-        height: 400px;
+        height: 430px;
     }
     
     .right{
         position: absolute;
-        top: 200px;
+        top: 220px;
         width: 360px;
         height: 350px;
     }
